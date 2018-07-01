@@ -40,6 +40,8 @@ char in_list(int id);
 	{
 		if(id_list[hash] == id)
 			return 1;
+		if(id_list[hash] == 0)
+			return 0;
 		hash++;
 		hash%=MAX_IDS;
 	}
